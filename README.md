@@ -1,18 +1,3 @@
-## 📌 Objective  
-
-This document identifies defects in the provided requirement set of the Online Course Registration System.
-
-The following defect categories are covered:
-
-- 5 Inconsistencies  
-- 5 Incompleteness defects  
-- 3 Ambiguities  
-- 2 Unverifiable (Untestable) requirements  
-
-**Total Defects Identified: 15**
-
----
-
 # 🔍 Defect Analysis  
 
 ---
