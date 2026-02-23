@@ -1,0 +1,139 @@
+# Online Course Registration System  
+
+---
+
+## ✅ Improved, Clear, Testable & Non-Conflicting Requirements
+
+---
+
+### R1 — Course Registration
+
+**Old:**  
+“The system shall allow students to register for courses.”
+
+**Rewritten:**  
+The system shall allow authenticated students to register for available courses during the official registration period for the active semester.
+
+---
+
+### R2 & R3 — Registration Deadline
+
+**Old:**  
+R2: “The system shall not allow registration after the deadline.”  
+R3: “Late registration is allowed for 3 days after the deadline.”
+
+**Rewritten:**  
+The system shall allow regular registration until 11:59 PM on the official registration deadline date.  
+The system shall allow late registration for exactly 3 calendar days after the deadline with late registration status recorded.
+
+---
+
+### R4 — Available Seats Display
+
+**Old:**  
+“The system shall show available seats for each course.”
+
+**Rewritten:**  
+The system shall display the number of available seats for each course in real time and refresh the seat count within 5 seconds after any enrollment change.
+
+---
+
+### R5 & R16 — Full Seat Handling
+
+**Old:**  
+R5: “The system shall allow course registration even if seats are full.”  
+R16: “The system shall support wait listing when seats are full.”
+
+**Rewritten:**  
+If a course has zero available seats, the system shall prevent direct enrollment and automatically add the student to the waitlist.
+
+---
+
+### R6 — Confirmation Notification
+
+**Old:**  
+“The system shall send confirmation.”
+
+**Rewritten:**  
+The system shall send a confirmation email to the student’s university email address within 1 minute after successful registration, drop, or waitlist action.
+
+---
+
+### R7 & R8 — Prerequisites with Approval
+
+**Old:**  
+R7: “The system shall prevent students from registering if prerequisites are not met.”  
+R8: “Prerequisites may be ignored if the instructor approves.”
+
+**Rewritten:**  
+The system shall prevent registration if prerequisite courses are not completed.  
+The system shall allow prerequisite override only after digital instructor approval is recorded in the system.
+
+---
+
+### R9 & R10 — Schedule Conflict Rule
+
+**Old:**  
+R9: “The system shall prevent schedule conflicts.”  
+R10: “Students may register for two courses occurring at the same time if one is an online course.”
+
+**Rewritten:**  
+The system shall prevent students from registering in two on-campus courses that overlap in time.  
+The system shall allow time overlap if at least one of the courses is fully online.
+
+---
+
+### R11 & R12 — Credit Hour Limit
+
+**Old:**  
+R11: “The system shall limit students to 18 credit hours per semester.”  
+R12: “Students may register for up to 24 credit hours with advisor approval.”
+
+**Rewritten:**  
+The system shall limit students to a maximum of 18 credit hours per semester by default.  
+The system shall allow registration up to 24 credit hours only after advisor approval is digitally verified.
+
+---
+
+### R13, R14 & R15 — Course Drop Policy
+
+**Old:**  
+R13: “The system shall allow students to drop courses until Week 6.”  
+R14: “The system shall charge a fee for dropping courses after Week 2.”  
+R15: “The system shall not allow course drops after the deadline.”
+
+**Rewritten:**  
+The system shall allow students to drop courses until 11:59 PM on the last day of Week 6 of the semester.  
+The system shall charge a drop fee of $50 per course for drops made after Week 2.  
+The system shall prevent course drops after the Week 6 deadline.
+
+---
+
+### R17 & R18 — Waitlist Enrollment
+
+**Old:**  
+R17: “Waitlisted students shall automatically be enrolled when a seat becomes available.”  
+R18: “The system shall enroll waitlisted students in the order they joined the waitlist.”
+
+**Rewritten:**  
+When a seat becomes available, the system shall automatically enroll the first student on the waitlist based on chronological order of waitlist registration.
+
+---
+
+### R19 — Priority Enrollment
+
+**Old:**  
+“Priority enrollment shall be given to final-year students.”
+
+**Rewritten:**  
+During initial seat allocation, the system shall process enrollment requests of final-year students before processing other students.
+
+---
+
+### R20 — Performance Requirement
+
+**Old:**  
+“Students shall be able to register quickly.”
+
+**Rewritten:**  
+The system shall complete the course registration transaction within 3 seconds under normal system load (up to 1,000 concurrent users).
